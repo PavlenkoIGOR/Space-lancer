@@ -1,0 +1,1000 @@
+fileFormatVersion: 2
+guid: 2b16f77c054f5894c97d78177de2b6db
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: space-ship-game-sprites_22191-182-Photoroom_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 443
+        width: 144
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb66122a298e3f4a9e30f8835e19a94
+      internalID: 1021785496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-ship-game-sprites_22191-182-Photoroom_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 474
+        width: 210
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd81a23225298ab4f887fb0572a13b14
+      internalID: -41587011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-ship-game-sprites_22191-182-Photoroom_4
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 473
+        width: 159
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ab87926376a7649af37b4a27011a30
+      internalID: -1303176927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-ship-game-sprites_22191-182-Photoroom_5
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 462
+        width: 190
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b18383865f1a404297bf5e1a0367d5c
+      internalID: 1406590667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-ship-game-sprites_22191-182-Photoroom_7
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 477
+        width: 158
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1a695e11141f7479952826b3233f1e
+      internalID: 159870931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-ship-game-sprites_22191-182-Photoroom_20
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 252
+        width: 234
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da2175999d6ba145bcecab6b318bbfb
+      internalID: 157832387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-ship-game-sprites_22191-182-Photoroom_21
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 229
+        width: 257
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465557071249a28448b3f2736030a471
+      internalID: 802895543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-ship-game-sprites_22191-182-Photoroom_23
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 233
+        width: 234
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bede2833d4036f640856cb28c06e91f5
+      internalID: 873861118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-ship-game-sprites_22191-182-Photoroom_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 237
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549bfb68f52539445a136933a63db476
+      internalID: -1749632787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-ship-game-sprites_22191-182-Photoroom_31
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 0
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5c47435b26d974e83822a8ea9849d9
+      internalID: -1589707365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-ship-game-sprites_22191-182-Photoroom_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2994355dc7ae4e5448eaf95488723145
+      internalID: 24254554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-ship-game-sprites_22191-182-Photoroom_33
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 11
+        width: 212
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d5d183439af1949b032cfff5c7f617
+      internalID: -1111329869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-ship-game-sprites_22191-182-Photoroom_34
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 18
+        width: 187
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b067f92d39eb30749853452da471e577
+      internalID: 44543211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -368, y: -78}
+      - {x: -427, y: -78}
+      - {x: -460, y: -96}
+      - {x: -529, y: -252}
+      - {x: -529, y: -269}
+      - {x: -528, y: -271}
+      - {x: -512, y: -269}
+      - {x: -497, y: -302}
+      - {x: -490, y: -314}
+      - {x: -312, y: -314}
+      - {x: -288, y: -269}
+      - {x: -288, y: -187}
+      - {x: -333, y: -99}
+    - - {x: -226, y: -294}
+      - {x: -226, y: -306}
+      - {x: -224, y: -313}
+      - {x: -219, y: -314}
+      - {x: -204, y: -314}
+      - {x: -204, y: -308}
+      - {x: -216, y: -294}
+    - - {x: 526, y: -221}
+      - {x: 519, y: -174}
+      - {x: 498, y: -152}
+      - {x: 411, y: -118}
+      - {x: 394, y: -118}
+      - {x: 397, y: -152}
+      - {x: 389, y: -153}
+      - {x: 379, y: -164}
+      - {x: 394, y: -146}
+      - {x: 377, y: -118}
+      - {x: 366, y: -118}
+      - {x: 362, y: -119}
+      - {x: 331, y: -136}
+      - {x: 249, y: -169}
+      - {x: 248, y: -171}
+      - {x: 248, y: -256}
+      - {x: 310, y: -314}
+      - {x: 476, y: -314}
+      - {x: 525, y: -256}
+      - {x: 530, y: -238}
+      - {x: 530, y: -222}
+    - - {x: -107, y: -163}
+      - {x: -107, y: -170}
+      - {x: -108, y: -168}
+      - {x: -112, y: -144}
+      - {x: -189, y: -144}
+      - {x: -201, y: -148}
+      - {x: -189, y: -173}
+      - {x: -239, y: -179}
+      - {x: -239, y: -262}
+      - {x: -183, y: -305}
+      - {x: -67, y: -305}
+      - {x: -23, y: -275}
+      - {x: -23, y: -164}
+      - {x: -97, y: -149}
+    - - {x: 140, y: -136}
+      - {x: 105, y: -136}
+      - {x: 25, y: -188}
+      - {x: 25, y: -276}
+      - {x: 36, y: -298}
+      - {x: 207, y: -298}
+      - {x: 216, y: -274}
+      - {x: 216, y: -233}
+      - {x: 210, y: -206}
+    - - {x: 526, y: -282}
+      - {x: 518, y: -282}
+      - {x: 512, y: -287}
+      - {x: 512, y: -297}
+      - {x: 514, y: -298}
+      - {x: 523, y: -298}
+      - {x: 528, y: -293}
+      - {x: 528, y: -283}
+    - - {x: -413, y: -284}
+      - {x: -416, y: -281}
+      - {x: -422, y: -281}
+      - {x: -423, y: -282}
+      - {x: -422, y: -283}
+      - {x: -421, y: -282}
+      - {x: -403, y: -282}
+      - {x: -409, y: -289}
+      - {x: -410, y: -288}
+    - - {x: -10, y: -252}
+      - {x: -10, y: -263}
+      - {x: 12, y: -286}
+      - {x: 24, y: -286}
+      - {x: 24, y: -279}
+      - {x: 19, y: -272}
+      - {x: 0, y: -252}
+    - - {x: -285, y: -244}
+      - {x: -278, y: -244}
+      - {x: -276, y: -243}
+      - {x: -276, y: -234}
+      - {x: -286, y: -234}
+      - {x: -286, y: -242}
+    - - {x: -530, y: -216}
+      - {x: -530, y: -226}
+      - {x: -528, y: -226}
+      - {x: -523, y: -224}
+      - {x: -522, y: -219}
+      - {x: -525, y: -216}
+    - - {x: 470, y: -182}
+      - {x: 470, y: -196}
+      - {x: 480, y: -196}
+      - {x: 480, y: -182}
+    - - {x: 403, y: -191}
+      - {x: 404, y: -191}
+      - {x: 404, y: -192}
+      - {x: 404, y: -191}
+    - - {x: -424, y: -170}
+      - {x: -425, y: -169}
+      - {x: -425, y: -164}
+      - {x: -428, y: -161}
+      - {x: -433, y: -152}
+      - {x: -435, y: -140}
+      - {x: -415, y: -135}
+      - {x: -419, y: -128}
+      - {x: -422, y: -125}
+      - {x: -429, y: -125}
+      - {x: -422, y: -123}
+      - {x: -419, y: -120}
+      - {x: -419, y: -116}
+      - {x: -422, y: -113}
+      - {x: -444, y: -114}
+      - {x: -418, y: -115}
+      - {x: -418, y: -116}
+      - {x: -416, y: -121}
+      - {x: -410, y: -122}
+      - {x: -384, y: -127}
+      - {x: -404, y: -127}
+      - {x: -414, y: -136}
+      - {x: -385, y: -142}
+      - {x: -384, y: -172}
+      - {x: -383, y: -170}
+      - {x: -385, y: -167}
+      - {x: -388, y: -166}
+      - {x: -392, y: -165}
+      - {x: -398, y: -165}
+      - {x: -401, y: -168}
+      - {x: -401, y: -173}
+      - {x: -400, y: -173}
+      - {x: -400, y: -170}
+      - {x: -401, y: -169}
+      - {x: -401, y: -161}
+      - {x: -404, y: -146}
+      - {x: -424, y: -142}
+      - {x: -425, y: -150}
+      - {x: -425, y: -169}
+      - {x: -426, y: -170}
+      - {x: -426, y: -182}
+      - {x: -425, y: -182}
+    - - {x: -502, y: -162}
+      - {x: -508, y: -170}
+      - {x: -508, y: -177}
+      - {x: -506, y: -178}
+      - {x: -497, y: -178}
+      - {x: -492, y: -173}
+      - {x: -492, y: -164}
+      - {x: -493, y: -162}
+    - - {x: 512, y: -144}
+      - {x: 512, y: -153}
+      - {x: 522, y: -164}
+      - {x: 528, y: -166}
+      - {x: 530, y: -166}
+      - {x: 530, y: -147}
+      - {x: 522, y: -144}
+    - - {x: 496, y: -144}
+      - {x: 494, y: -146}
+      - {x: 494, y: -152}
+      - {x: 496, y: -154}
+      - {x: 503, y: -154}
+      - {x: 504, y: -151}
+      - {x: 504, y: -144}
+    - - {x: 445, y: -140}
+      - {x: 447, y: -142}
+      - {x: 450, y: -141}
+      - {x: 450, y: -134}
+      - {x: 448, y: -132}
+      - {x: 445, y: -133}
+    - - {x: -164, y: -126}
+      - {x: -166, y: -128}
+      - {x: -166, y: -133}
+      - {x: -163, y: -136}
+      - {x: -158, y: -136}
+      - {x: -156, y: -134}
+      - {x: -156, y: -128}
+      - {x: -158, y: -126}
+    - - {x: -104, y: -126}
+      - {x: -106, y: -128}
+      - {x: -106, y: -134}
+      - {x: -104, y: -136}
+      - {x: -99, y: -136}
+      - {x: -96, y: -133}
+      - {x: -96, y: -128}
+      - {x: -98, y: -126}
+    - - {x: -468, y: -72}
+      - {x: -493, y: -96}
+      - {x: -496, y: -108}
+      - {x: -496, y: -130}
+      - {x: -469, y: -130}
+      - {x: -460, y: -128}
+      - {x: -456, y: -103}
+      - {x: -456, y: -72}
+    - - {x: -334, y: -120}
+      - {x: -336, y: -122}
+      - {x: -336, y: -128}
+      - {x: -334, y: -130}
+      - {x: -332, y: -130}
+      - {x: -330, y: -128}
+      - {x: -330, y: -122}
+      - {x: -332, y: -120}
+    - - {x: -428, y: -90}
+      - {x: -430, y: -92}
+      - {x: -430, y: -98}
+      - {x: -428, y: -100}
+      - {x: -422, y: -100}
+      - {x: -420, y: -98}
+      - {x: -420, y: -92}
+      - {x: -422, y: -90}
+    - - {x: -204, y: -28}
+      - {x: -217, y: 2}
+      - {x: -283, y: 102}
+      - {x: -366, y: 102}
+      - {x: -442, y: -3}
+      - {x: -442, y: -49}
+      - {x: -429, y: -61}
+      - {x: -360, y: -90}
+      - {x: -344, y: -94}
+      - {x: -326, y: -94}
+      - {x: -323, y: -93}
+      - {x: -218, y: -82}
+      - {x: -216, y: -80}
+      - {x: -204, y: -44}
+    - - {x: -322, y: -83}
+      - {x: -322, y: -92}
+      - {x: -320, y: -94}
+      - {x: -314, y: -94}
+      - {x: -312, y: -92}
+      - {x: -312, y: -89}
+      - {x: -319, y: -82}
+    - - {x: -466, y: -48}
+      - {x: -466, y: -59}
+      - {x: -444, y: -88}
+      - {x: -432, y: -88}
+      - {x: -432, y: -73}
+      - {x: -457, y: -48}
+    - - {x: -284, y: -54}
+      - {x: -289, y: -54}
+      - {x: -292, y: -57}
+      - {x: -298, y: -78}
+      - {x: -298, y: -87}
+      - {x: -296, y: -88}
+      - {x: -288, y: -88}
+      - {x: -282, y: -80}
+      - {x: -282, y: -55}
+    - - {x: 288, y: 71}
+      - {x: 288, y: 57}
+      - {x: 292, y: 56}
+      - {x: 295, y: 56}
+      - {x: 288, y: 56}
+      - {x: 288, y: 58}
+      - {x: 279, y: 121}
+      - {x: 174, y: 121}
+      - {x: 92, y: 72}
+      - {x: 92, y: 6}
+      - {x: 108, y: -50}
+      - {x: 136, y: -87}
+      - {x: 308, y: -87}
+      - {x: 353, y: 4}
+      - {x: 353, y: 74}
+      - {x: 322, y: 74}
+    - - {x: -353, y: -51}
+      - {x: -353, y: -55}
+      - {x: -347, y: -61}
+      - {x: -347, y: -60}
+      - {x: -350, y: -60}
+      - {x: -353, y: -63}
+      - {x: -353, y: -78}
+    - - {x: 31, y: 53}
+      - {x: 27, y: 48}
+      - {x: 0, y: 73}
+      - {x: -26, y: 92}
+      - {x: -33, y: 91}
+      - {x: -33, y: 55}
+      - {x: -38, y: 103}
+      - {x: -48, y: 126}
+      - {x: -57, y: 126}
+      - {x: -62, y: 116}
+      - {x: -58, y: 91}
+      - {x: -60, y: 82}
+      - {x: -60, y: 70}
+      - {x: -58, y: 68}
+      - {x: -60, y: 64}
+      - {x: -60, y: 82}
+      - {x: -61, y: 84}
+      - {x: -59, y: 95}
+      - {x: -64, y: 100}
+      - {x: -85, y: 96}
+      - {x: -83, y: 88}
+      - {x: -76, y: 82}
+      - {x: -86, y: 90}
+      - {x: -94, y: 96}
+      - {x: -122, y: 61}
+      - {x: -127, y: 38}
+      - {x: -146, y: 54}
+      - {x: -162, y: 61}
+      - {x: -178, y: 28}
+      - {x: -178, y: -34}
+      - {x: -118, y: -64}
+      - {x: -8, y: -64}
+      - {x: 52, y: -50}
+      - {x: 60, y: -31}
+      - {x: 60, y: 20}
+      - {x: 43, y: 59}
+    - - {x: 296, y: -52}
+      - {x: 306, y: -52}
+      - {x: 306, y: -44}
+      - {x: 305, y: -42}
+      - {x: 296, y: -42}
+    - - {x: -472, y: -12}
+      - {x: -472, y: -22}
+      - {x: -466, y: -22}
+      - {x: -462, y: -20}
+      - {x: -462, y: -14}
+      - {x: -463, y: -12}
+    - - {x: -400, y: 90}
+      - {x: -400, y: 80}
+      - {x: -379, y: 80}
+      - {x: -368, y: 81}
+      - {x: -366, y: 82}
+      - {x: -366, y: 90}
+    - - {x: -9, y: 121}
+      - {x: -19, y: 126}
+      - {x: -28, y: 126}
+      - {x: -28, y: 115}
+      - {x: 2, y: 86}
+      - {x: 12, y: 86}
+      - {x: 12, y: 96}
+      - {x: 1, y: 107}
+    - - {x: -256, y: 92}
+      - {x: -246, y: 92}
+      - {x: -246, y: 100}
+      - {x: -247, y: 102}
+      - {x: -256, y: 102}
+    - - {x: 261, y: 103}
+      - {x: 264, y: 104}
+      - {x: 264, y: 107}
+      - {x: 261, y: 108}
+      - {x: 259, y: 106}
+    - - {x: -344, y: 132}
+      - {x: -346, y: 130}
+      - {x: -346, y: 124}
+      - {x: -344, y: 122}
+      - {x: -338, y: 122}
+      - {x: -336, y: 124}
+      - {x: -336, y: 130}
+      - {x: -338, y: 132}
+    - - {x: -177, y: 132}
+      - {x: -178, y: 130}
+      - {x: -178, y: 124}
+      - {x: -176, y: 122}
+      - {x: -164, y: 122}
+      - {x: -162, y: 124}
+      - {x: -162, y: 130}
+      - {x: -163, y: 132}
+    - - {x: -385.47992, y: 224.96204}
+      - {x: -439.33817, y: 311.73993}
+      - {x: -475.0212, y: 311}
+      - {x: -530, y: 228}
+      - {x: -530, y: 167}
+      - {x: -529, y: 166}
+      - {x: -485.67856, y: 152.89844}
+      - {x: -438, y: 154}
+      - {x: -384, y: 167}
+    - - {x: -369, y: 150}
+      - {x: -376, y: 150}
+      - {x: -376, y: 138}
+      - {x: -365, y: 128}
+      - {x: -355, y: 128}
+      - {x: -354, y: 130}
+      - {x: -354, y: 139}
+      - {x: -360, y: 147}
+    - - {x: -301, y: 306}
+      - {x: -370, y: 209}
+      - {x: -370, y: 180}
+      - {x: -361, y: 152}
+      - {x: -209, y: 128}
+      - {x: -172, y: 128}
+      - {x: -156, y: 138}
+      - {x: -156, y: 224}
+      - {x: -197, y: 306}
+    - - {x: -126, y: 162}
+      - {x: -136, y: 162}
+      - {x: -160, y: 138}
+      - {x: -160, y: 128}
+      - {x: -150, y: 128}
+      - {x: -127, y: 151}
+      - {x: -126, y: 153}
+    - - {x: 353, y: 302}
+      - {x: 331, y: 275}
+      - {x: 332, y: 267}
+      - {x: 326, y: 302}
+      - {x: 297, y: 302}
+      - {x: 266, y: 290}
+      - {x: 266, y: 152}
+      - {x: 270, y: 128}
+      - {x: 385, y: 128}
+      - {x: 428, y: 191}
+      - {x: 428, y: 270}
+      - {x: 385, y: 302}
+    - - {x: 242, y: 209}
+      - {x: 208, y: 314}
+      - {x: 83, y: 314}
+      - {x: 48, y: 274}
+      - {x: 48, y: 146}
+      - {x: 242, y: 146}
+    - - {x: 336, y: 151}
+      - {x: 337, y: 151}
+      - {x: 337, y: 150}
+      - {x: 336, y: 150}
+    - - {x: -13, y: 306}
+      - {x: -111, y: 306}
+      - {x: -137, y: 253}
+      - {x: -137, y: 167}
+      - {x: -122, y: 157}
+      - {x: -9, y: 157}
+      - {x: 26, y: 181}
+      - {x: 26, y: 248}
+      - {x: 19, y: 257}
+      - {x: 6, y: 250}
+      - {x: 2, y: 269}
+    - - {x: 337, y: 164}
+      - {x: 333, y: 167}
+      - {x: 334, y: 165}
+      - {x: 336, y: 165}
+      - {x: 340, y: 161}
+      - {x: 350, y: 162}
+      - {x: 338, y: 163}
+      - {x: 337, y: 162}
+      - {x: 336, y: 162}
+    - - {x: 39, y: 192}
+      - {x: 38, y: 190}
+      - {x: 38, y: 182}
+      - {x: 48, y: 182}
+      - {x: 48, y: 192}
+    - - {x: -354, y: 246}
+      - {x: -358, y: 241}
+      - {x: -358, y: 231}
+      - {x: -357, y: 230}
+      - {x: -349, y: 230}
+      - {x: -342, y: 239}
+      - {x: -342, y: 245}
+      - {x: -343, y: 246}
+    - - {x: -172, y: 246}
+      - {x: -172, y: 236}
+      - {x: -162, y: 236}
+      - {x: -162, y: 245}
+      - {x: -164, y: 246}
+    - - {x: -275, y: 265}
+      - {x: -274, y: 260}
+      - {x: -275, y: 261}
+    - - {x: -184, y: 270}
+      - {x: -184, y: 260}
+      - {x: -174, y: 260}
+      - {x: -174, y: 269}
+      - {x: -176, y: 270}
+    - - {x: -239, y: 274}
+      - {x: -241, y: 276}
+      - {x: -241, y: 278}
+      - {x: -239, y: 280}
+      - {x: -239, y: 284}
+      - {x: -241, y: 287}
+      - {x: -241, y: 290}
+      - {x: -240, y: 289}
+      - {x: -239, y: 281}
+      - {x: -240, y: 280}
+      - {x: -240, y: 274}
+      - {x: -239, y: 271}
+    - - {x: 199, y: 274}
+      - {x: 201, y: 272}
+      - {x: 204, y: 273}
+      - {x: 204, y: 304}
+      - {x: 202, y: 306}
+      - {x: 199, y: 305}
+    - - {x: -275, y: 289}
+      - {x: -273, y: 289}
+      - {x: -272, y: 290}
+      - {x: -273, y: 288}
+      - {x: -275, y: 286}
+      - {x: -275, y: 277}
+    - - {x: 10, y: 286}
+      - {x: 10, y: 283}
+      - {x: 15, y: 278}
+      - {x: 18, y: 279}
+      - {x: 18, y: 286}
+      - {x: 16, y: 288}
+      - {x: 12, y: 288}
+    - - {x: 88, y: 294}
+      - {x: 86, y: 292}
+      - {x: 86, y: 280}
+      - {x: 88, y: 278}
+      - {x: 90, y: 278}
+      - {x: 92, y: 280}
+      - {x: 92, y: 292}
+      - {x: 90, y: 294}
+    - - {x: -37, y: 283}
+      - {x: -36, y: 281}
+      - {x: -36, y: 282}
+    - - {x: 381, y: 283}
+      - {x: 382, y: 283}
+      - {x: 383, y: 284}
+      - {x: 381, y: 282}
+    - - {x: 134, y: 294}
+      - {x: 134, y: 286}
+      - {x: 135, y: 284}
+      - {x: 142, y: 284}
+      - {x: 144, y: 285}
+      - {x: 144, y: 294}
+    - - {x: -319, y: 314}
+      - {x: -322, y: 308}
+      - {x: -322, y: 296}
+      - {x: -314, y: 296}
+      - {x: -300, y: 303}
+      - {x: -300, y: 314}
+    - - {x: -214, y: 314}
+      - {x: -214, y: 309}
+      - {x: -207, y: 302}
+      - {x: -198, y: 302}
+      - {x: -198, y: 313}
+      - {x: -200, y: 314}
+    - - {x: -111, y: 309}
+      - {x: -115, y: 306}
+      - {x: -115, y: 304}
+      - {x: -114, y: 302}
+      - {x: -110, y: 302}
+      - {x: -108, y: 304}
+      - {x: -108, y: 307}
+      - {x: -110, y: 309}
+    - - {x: 95, y: 312}
+      - {x: 88, y: 312}
+      - {x: 86, y: 310}
+      - {x: 86, y: 303}
+      - {x: 87, y: 302}
+      - {x: 94, y: 302}
+      - {x: 95, y: 303}
+      - {x: 96, y: 305}
+      - {x: 96, y: 311}
+    - - {x: 136, y: 312}
+      - {x: 134, y: 310}
+      - {x: 134, y: 308}
+      - {x: 136, y: 306}
+      - {x: 142, y: 306}
+      - {x: 144, y: 308}
+      - {x: 144, y: 310}
+      - {x: 142, y: 312}
+    - - {x: -279, y: 314}
+      - {x: -280, y: 313}
+      - {x: -280, y: 310}
+      - {x: -278, y: 308}
+      - {x: -272, y: 308}
+      - {x: -270, y: 310}
+      - {x: -272, y: 314}
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      space-ship-game-sprites_22191-182-Photoroom_0: 1021785496
+      space-ship-game-sprites_22191-182-Photoroom_1: -41587011
+      space-ship-game-sprites_22191-182-Photoroom_10: 901908350
+      space-ship-game-sprites_22191-182-Photoroom_11: -1052376559
+      space-ship-game-sprites_22191-182-Photoroom_12: -97597568
+      space-ship-game-sprites_22191-182-Photoroom_13: 1306224349
+      space-ship-game-sprites_22191-182-Photoroom_14: 1266236249
+      space-ship-game-sprites_22191-182-Photoroom_15: 1525240167
+      space-ship-game-sprites_22191-182-Photoroom_16: -277868363
+      space-ship-game-sprites_22191-182-Photoroom_17: -432055134
+      space-ship-game-sprites_22191-182-Photoroom_18: -2119111602
+      space-ship-game-sprites_22191-182-Photoroom_19: 1703337316
+      space-ship-game-sprites_22191-182-Photoroom_2: -768264543
+      space-ship-game-sprites_22191-182-Photoroom_20: 157832387
+      space-ship-game-sprites_22191-182-Photoroom_21: 802895543
+      space-ship-game-sprites_22191-182-Photoroom_22: -2095177508
+      space-ship-game-sprites_22191-182-Photoroom_23: 873861118
+      space-ship-game-sprites_22191-182-Photoroom_24: -1749632787
+      space-ship-game-sprites_22191-182-Photoroom_25: -1465105569
+      space-ship-game-sprites_22191-182-Photoroom_26: -372797206
+      space-ship-game-sprites_22191-182-Photoroom_27: -946651849
+      space-ship-game-sprites_22191-182-Photoroom_28: -1056966913
+      space-ship-game-sprites_22191-182-Photoroom_29: -39031352
+      space-ship-game-sprites_22191-182-Photoroom_3: 1028902714
+      space-ship-game-sprites_22191-182-Photoroom_30: -661658369
+      space-ship-game-sprites_22191-182-Photoroom_31: -1589707365
+      space-ship-game-sprites_22191-182-Photoroom_32: 24254554
+      space-ship-game-sprites_22191-182-Photoroom_33: -1111329869
+      space-ship-game-sprites_22191-182-Photoroom_34: 44543211
+      space-ship-game-sprites_22191-182-Photoroom_35: 1194440007
+      space-ship-game-sprites_22191-182-Photoroom_36: -1151300672
+      space-ship-game-sprites_22191-182-Photoroom_37: 38778267
+      space-ship-game-sprites_22191-182-Photoroom_38: 912213584
+      space-ship-game-sprites_22191-182-Photoroom_4: -1303176927
+      space-ship-game-sprites_22191-182-Photoroom_5: 1406590667
+      space-ship-game-sprites_22191-182-Photoroom_6: 2109507004
+      space-ship-game-sprites_22191-182-Photoroom_7: 159870931
+      space-ship-game-sprites_22191-182-Photoroom_8: -1172658083
+      space-ship-game-sprites_22191-182-Photoroom_9: -1909894015
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
