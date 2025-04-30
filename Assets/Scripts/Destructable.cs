@@ -85,6 +85,9 @@ namespace Space_lancer
             _eventOnDeath?.Invoke();
         }
         #endregion
-
+        private void OnDestroy()
+        {
+            _eventOnDeath.RemoveAllListeners();
+        }
     }
 }
