@@ -85,5 +85,18 @@ namespace Space_lancer
                 //velocity(_maxLinearVelocity), then this force will decrease the ship's speed.
                 _rb.AddForce(-_rb.velocity * (_thrust / _maxLinearVelocity) * Time.fixedDeltaTime, ForceMode2D.Force);
         }
+
+        [SerializeField] private Turret[] _turrets;
+        public void ShipFire(TurretMode turretMode)
+        {
+            for (int i = 0; i < _turrets.Length; i++)
+            {
+                if (_turrets[i].turretMode == turretMode)
+                {
+                    _turrets[i].Fire();
+                    
+                }
+            }
+        }
     }
 }

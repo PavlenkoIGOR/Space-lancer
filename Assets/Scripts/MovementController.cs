@@ -22,10 +22,14 @@ namespace Space_lancer
             if (_controlMode == ControlMode.Keyboard)
             {
                 _joystick.gameObject.SetActive(false);
+                _mobileFirePrimary.gameObject.SetActive(false);
+                _mobileFireSecondary.gameObject.SetActive(false);
             }
             else
             {
                 _joystick.gameObject.SetActive(true);
+                _mobileFirePrimary.gameObject.SetActive(true);
+                _mobileFireSecondary.gameObject.SetActive(true);
             }
         }
 
@@ -60,6 +64,15 @@ namespace Space_lancer
                 var dir = _joystick.value;
                 _ship.thrustControl = dir.y;
                 _ship.torqueControl = -dir.x;
+
+                if (_mobileFirePrimary.isHold)
+                {
+                    _ship.ShipFire(TurretMode.Primary);
+                }
+                if (_mobileFireSecondary.isHold)
+                {
+                    _ship.ShipFire(TurretMode.Secondary);
+                }
             }
         }
 
@@ -101,8 +114,20 @@ namespace Space_lancer
                     torque = -1.0f;
                 }
 
+
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    _ship.ShipFire(TurretMode.Primary);
+                }
+                if (Input.GetKey(KeyCode.C))
+                {
+                    _ship.ShipFire(TurretMode.Secondary);
+                }
+
+
                 _ship.thrustControl = thrust;
                 _ship.torqueControl = torque;
+
             }
         }
         private void ControlKeyboardAndMobile()
@@ -130,5 +155,8 @@ namespace Space_lancer
         {
             _ship = spaceShip;
         }
+
+        [SerializeField] private PointerClickHold _mobileFirePrimary;
+        [SerializeField] private PointerClickHold _mobileFireSecondary;
     }
 }
