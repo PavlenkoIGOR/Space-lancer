@@ -27,8 +27,9 @@ namespace Space_lancer
 
         private void OnShipDeath()
         {
+            Debug.Log("OnshipDeathMethod");
             _livesQuantity--;
-
+            Debug.Log($"_livesQuantity {_livesQuantity}");
             if (_livesQuantity > 0)
             {
                 Respawn();
@@ -43,6 +44,7 @@ namespace Space_lancer
 
             _cameraController.SetTarget(_ship.transform);
             _movementController.SetTargetShip(_ship);
+            _ship.eventOnDeath.AddListener(OnShipDeath);
         }
     }
 }
