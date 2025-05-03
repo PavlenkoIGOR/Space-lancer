@@ -23,8 +23,8 @@ public sealed class TurretProperties : ScriptableObject
     [SerializeField] private int _energyUsage;
     public int energyUsage => _energyUsage;
 
-    [SerializeField] private float _ammoUsage; //type of ammo
-    public float ammoUsage => _ammoUsage;
+    [SerializeField] private int _ammoUsage; //type of ammo
+    public int ammoUsage => _ammoUsage;
 
     [SerializeField] private AudioClip _launchSFX; //shoot sound
     public AudioClip launchSFX => _launchSFX;

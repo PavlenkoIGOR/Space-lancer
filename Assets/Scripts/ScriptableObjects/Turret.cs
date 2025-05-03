@@ -35,6 +35,9 @@ public class Turret : MonoBehaviour
 
         if (_refireTimer > 0) return;
 
+        if (!_ship.DrawNRG(_turretProperties.energyUsage)) return;
+        if (!_ship.DrawAmmo(_turretProperties.ammoUsage)) return;
+
         Projectile projectile = Instantiate(_turretProperties.projectilePrefab).GetComponent<Projectile>();
         //чтобы не писать Instantiate(object, position, rotation), пишем так:
         //instead of Instantiate(object, position, rotation) write:

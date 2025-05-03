@@ -51,6 +51,8 @@ namespace Space_lancer
             _rb = GetComponent<Rigidbody2D>();
             _rb.mass = _mass;
             _rb.inertia = 1;
+
+            InitOffensive();
         }
 
         private void Update()
@@ -60,6 +62,8 @@ namespace Space_lancer
         void FixedUpdate() //because RB
         {
             UpdateRB();
+
+            UpdateNRGRegen();
         }
 
         private void UpdateRB()
@@ -97,6 +101,61 @@ namespace Space_lancer
                     
                 }
             }
+        }
+
+        [SerializeField] private int _maxEnergy;
+        [SerializeField] private int _maxAmmo;
+        [SerializeField] private int _energyRegenPerSec;
+
+        private float _primaryEnergy;
+        private int _secondaryAmmo;
+
+        public void AddEnergy(int nrg)
+        {
+            _primaryEnergy = Mathf.Clamp(_primaryEnergy + nrg, 0, _maxEnergy);
+        }
+
+        public void AddAmmo(int ammo)
+        {
+            _secondaryAmmo = Mathf.Clamp(_secondaryAmmo + ammo, 0, _maxAmmo);
+        }
+
+        private void InitOffensive()
+        {
+            _primaryEnergy = _maxEnergy;
+            _secondaryAmmo = _maxAmmo;
+        }
+
+        private void UpdateNRGRegen()
+        {
+            _primaryEnergy += (float)_energyRegenPerSec * Time.fixedDeltaTime;
+            _primaryEnergy = Mathf.Clamp(_primaryEnergy, 0, _maxEnergy);
+        }
+
+        public bool DrawAmmo(int amount)
+        {
+            if (amount == 0) return true;
+
+            if (_secondaryAmmo >= amount)
+            {
+                _secondaryAmmo -= amount;
+                return true;
+            }
+
+            return false;
+        }
+
+        public bool DrawNRG(int amount)
+        {
+            if (amount == 0) return true;
+
+            if (_primaryEnergy >= amount)
+            {
+                _primaryEnergy -= amount;
+                return true;
+            }
+
+            return false;
         }
     }
 }

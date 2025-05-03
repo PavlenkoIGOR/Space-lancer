@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd06aa539eb053c4e8efb9457e10afe8, type: 3}
-  m_Name: PrimaryBaseTurret
+  m_Name: SecondaryRocketTurret
   m_EditorClassIdentifier: 
-  _turretMode: 0
+  _turretMode: 1
   _projectilePrefab: {fileID: 816896816100571058, guid: 7f40519c56a998945babfc188856facc, type: 3}
-  _rateFoFire: 0.2
-  _energyUsage: 1
-  _ammoUsage: 0
+  _rateFoFire: 1
+  _energyUsage: 0
+  _ammoUsage: 1
   _launchSFX: {fileID: 0}
