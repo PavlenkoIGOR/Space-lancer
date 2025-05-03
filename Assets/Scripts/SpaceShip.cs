@@ -157,5 +157,17 @@ namespace Space_lancer
 
             return false;
         }
+
+        /// <summary>
+        /// метод, назначающий какое-то свойство турелям
+        /// </summary>
+        /// <param name="props"></param>
+        public void AssignWeapon(TurretProperties props)
+        {
+            for (int i = 0; i < _turrets.Length; i++)
+            {
+                _turrets[i].AssignLoadOut(props);
+            }
+        }
     }
 }

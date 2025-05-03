@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Space_lancer
 {
-    public class Player : MonoBehaviour
+    public class Player : SingletonBase<Player>
     {
         [SerializeField] private int _livesQuantity;
         [SerializeField] private SpaceShip _ship;
@@ -11,7 +11,7 @@ namespace Space_lancer
         [SerializeField] private CameraController _cameraController;    
         [SerializeField] private MovementController _movementController;
 
-        
+        public SpaceShip activeShip => _ship;
         // Start is called before the first frame update
         void Start()
         {
