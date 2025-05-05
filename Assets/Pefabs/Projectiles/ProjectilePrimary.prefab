@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5927389013670571812}
   - component: {fileID: 816896816100571058}
   m_Layer: 0
-  m_Name: ProjectileBase
+  m_Name: ProjectilePrimary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,7 +48,8 @@ MonoBehaviour:
   _nickName: 
   _velocity: 10
   _lifeTime: 1000
-  _damage: 0
+  _damage: 13
+  _type: 1
   _impactEffect: {fileID: 0}
 --- !u!1 &4420236335511095046
 GameObject:

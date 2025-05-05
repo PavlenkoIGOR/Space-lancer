@@ -45,7 +45,7 @@ namespace Space_lancer
         #region Public API
         public void ApplyDmg(int dmg)
         {
-            if (_isDestructable)
+            if (_isDestructable == true)
             {
                 _currentHitPoints -= dmg;
             }

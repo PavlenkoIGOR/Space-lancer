@@ -332,7 +332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nickName: 
   _isDestructable: 1
-  _hitPoints: 1000
+  _hitPoints: 10
   _eventOnDeath:
     m_PersistentCalls:
       m_Calls: []
@@ -347,6 +347,9 @@ MonoBehaviour:
   - {fileID: 7039678675865365360}
   - {fileID: 6790959870365469498}
   - {fileID: 8049742058345169718}
+  _maxEnergy: 20
+  _maxAmmo: 10
+  _energyRegenPerSec: 1
 --- !u!114 &4555241413308553578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -655,7 +658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _turretMode: 1
-  _turretProperties: {fileID: 11400000, guid: 07154a87adc162d4b8175651dae7dea0, type: 2}
+  _turretProperties: {fileID: 11400000, guid: 42e633419b42b2e4ea7e7e57a52f3566, type: 2}
 --- !u!1 &6920754762870113644
 GameObject:
   m_ObjectHideFlags: 0
