@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -34,6 +35,12 @@ namespace Space_lancer
 
         private Rigidbody2D _rb;
 
+        private float _timer = 0;
+        private float _durationOfSpeedIncrease = 2.0f;
+        private bool _isSpeedIncreased = false;
+        float originalThrust;
+        float origMaxVelocity;
+
         #region Public API
 
         /// <summary>
@@ -42,6 +49,7 @@ namespace Space_lancer
         public float thrustControl { get; set; }
         public float thrustControlSided { get; set; }
         public float torqueControl { get; set; }
+
         #endregion
 
         protected override void Start()
@@ -53,6 +61,9 @@ namespace Space_lancer
             _rb.inertia = 1;
 
             InitOffensive();
+
+             originalThrust = _thrust;
+             origMaxVelocity = _maxLinearVelocity;
         }
 
         private void Update()
@@ -168,6 +179,31 @@ namespace Space_lancer
             {
                 _turrets[i].AssignLoadOut(props);
             }
+        }
+
+
+
+        public void SpeedUp(float speedAmount)
+        {
+            if (!_isSpeedIncreased)
+            {
+                StartCoroutine(SpeedUpCoroutine(speedAmount));
+            }
+        }
+
+        private IEnumerator SpeedUpCoroutine(float speedAmount)
+        {
+            _isSpeedIncreased = true;
+
+            _thrust *= speedAmount;
+            _maxLinearVelocity += _thrust;
+
+            yield return new WaitForSeconds(_durationOfSpeedIncrease);
+
+            _thrust = originalThrust;
+            _maxLinearVelocity = origMaxVelocity;
+
+            _isSpeedIncreased = false;
         }
     }
 }

@@ -1,9 +1,5 @@
 using Space_lancer;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Animations;
-using UnityEngine.UIElements;
 
 
 public class Projectile : Entity
@@ -21,33 +17,33 @@ public class Projectile : Entity
         Simple
     }
     [SerializeField] private ProjectileType _type;
-    [SerializeField]private CircleCollider2D _seekingCircleArea;
-    private Vector3 _direction;
+    [SerializeField] private SeekingArea _seekingArea;
     private Destructable _target;
     #endregion
 
     [SerializeField] private ImpactEffect _impactEffect;
     private float _timer;
-    // Start is called before the first frame update
-    void Start()
-    {
-        #region seeking missle
-        _seekingCircleArea = GetComponent<CircleCollider2D>();
-        if (_seekingCircleArea != null)
-        {            
-            _seekingCircleArea.isTrigger = true;
-        }
-        #endregion
-    }
+
 
     // Update is called once per frame
     void Update()
     {
+        
         float stepLength = _velocity * Time.deltaTime;
         Vector2 step = Vector2.zero;
         if (_type == ProjectileType.SeekingMissle)
         {
-            step = transform.up * stepLength;
+            _seekingArea.GetCollidersInSeekArea();
+            _target = _seekingArea.nearestDestructable;
+            if (_target != null)
+            {
+                Vector2 directionToTarget = (_target.transform.root.position - transform.position).normalized;
+                step = directionToTarget * stepLength;
+            }
+            else
+            {
+                step = transform.up * stepLength;
+            }
         }
         if (_type == ProjectileType.Simple)
         {
@@ -86,17 +82,5 @@ public class Projectile : Entity
     public void SetParentShooter(Destructable parent)
     {
         _parent = parent;
-    }
-
-    
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Destructable enemyShip = collision.gameObject.transform.root.GetComponent<Destructable>();
-        if (enemyShip != null && enemyShip.transform.name != "PlayerShipNode")
-        {
-            _target = enemyShip;
-            Debug.Log("Target locked!");
-
-        }
     }
 }

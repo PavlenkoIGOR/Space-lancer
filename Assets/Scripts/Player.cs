@@ -27,9 +27,9 @@ namespace Space_lancer
 
         private void OnShipDeath()
         {
-            Debug.Log("OnshipDeathMethod");
+            //Debug.Log("OnshipDeathMethod");
             _livesQuantity--;
-            Debug.Log($"_livesQuantity {_livesQuantity}");
+            //Debug.Log($"_livesQuantity {_livesQuantity}");
             if (_livesQuantity > 0)
             {
                 Respawn();

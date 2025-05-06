@@ -11,7 +11,8 @@ namespace Space_lancer
         public enum EffectType
         {
             AddAmmo,
-            AddEnergy
+            AddEnergy,
+            SpeedUp
         }
 
         [SerializeField] private EffectType _effectType;
@@ -26,6 +27,11 @@ namespace Space_lancer
             if (_effectType == EffectType.AddAmmo)
             {
                 ship.AddAmmo((int)_value);
+            }
+
+            if (_effectType == EffectType.SpeedUp)
+            {
+                ship.SpeedUp((int)_value);
             }
         }
     }
