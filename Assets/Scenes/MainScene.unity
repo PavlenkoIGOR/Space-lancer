@@ -147,7 +147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1357969871508035680, guid: a0b1bfd01a96dd84fa41e5dff9005901, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7177897959054096967, guid: a0b1bfd01a96dd84fa41e5dff9005901, type: 3}
       propertyPath: m_LocalPosition.x
@@ -188,6 +188,10 @@ PrefabInstance:
     - target: {fileID: 7177897959054096967, guid: a0b1bfd01a96dd84fa41e5dff9005901, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7556756899678213047, guid: a0b1bfd01a96dd84fa41e5dff9005901, type: 3}
+      propertyPath: _numSpawns
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -394,12 +398,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2848834519111129275, guid: 704beec6bb278a140adfe21bbedeeba3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4367901528174079826, guid: 704beec6bb278a140adfe21bbedeeba3, type: 3}
       propertyPath: _debrisPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: -6156272937499028177, guid: e0dff66f9843aec458f95f36a37d6638, type: 3}
+      objectReference: {fileID: 6877540539002528541, guid: e0dff66f9843aec458f95f36a37d6638, type: 3}
     - target: {fileID: 7581630171024338815, guid: 704beec6bb278a140adfe21bbedeeba3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -532,6 +536,57 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &530434717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 530434719}
+  - component: {fileID: 530434718}
+  m_Layer: 0
+  m_Name: timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &530434718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530434717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3abc9a74a4b3c42438c8d4ab73552c0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _behaviour: 0
+  _navigationLinear: 0
+  _navigationAngular: 0
+  _randSelectMovePointTime: 0
+  _findNewTargetTime: 0
+  _shootDelay: 0
+  _evadeRayLength: 0
+--- !u!4 &530434719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530434717}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.260393, y: 6.980989, z: -0.23506646}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1715,6 +1770,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: powerup_SpeedUp
       objectReference: {fileID: 0}
+    - target: {fileID: 9204726540362502985, guid: 23451e12eb8f0284c93f63aeae71a950, type: 3}
+      propertyPath: _value
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1728,18 +1787,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 168368467930171842, guid: 009792761e7a7fe46871a19c5804179d, type: 3}
-      propertyPath: _nickName
-      value: PlayerShip
-      objectReference: {fileID: 0}
-    - target: {fileID: 2659386525187471601, guid: 009792761e7a7fe46871a19c5804179d, type: 3}
-      propertyPath: _numSpawns
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2659386525187471601, guid: 009792761e7a7fe46871a19c5804179d, type: 3}
-      propertyPath: _respawnTime
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3990519791660744321, guid: 009792761e7a7fe46871a19c5804179d, type: 3}
       propertyPath: m_Name
       value: PlayerShipNode
@@ -1806,3 +1853,4 @@ SceneRoots:
   - {fileID: 7457005471509429020}
   - {fileID: 212791628}
   - {fileID: 479318296}
+  - {fileID: 530434719}

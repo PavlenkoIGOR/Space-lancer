@@ -16,7 +16,7 @@ namespace Space_lancer
         /// <summary>
         /// hitpoints on start
         /// </summary>
-        [SerializeField] private int _hitPoints;
+        [SerializeField] public int _hitPoints;
 
         /// <summary>
         /// current hitpoints
@@ -85,7 +85,7 @@ namespace Space_lancer
             _eventOnDeath?.Invoke();
         }
         #endregion
-        private void OnDestroy()
+        protected virtual void OnDestroy()
         {
             _eventOnDeath.RemoveAllListeners();
         }

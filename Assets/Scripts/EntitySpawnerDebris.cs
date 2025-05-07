@@ -1,6 +1,7 @@
 using Space_lancer;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EntitySpawnerDebris : MonoBehaviour
@@ -45,6 +46,7 @@ public class EntitySpawnerDebris : MonoBehaviour
 
     private void OnDebrisDead()
     {
-        SpawnDebris();
+            SpawnDebris();
+        
     }
 }

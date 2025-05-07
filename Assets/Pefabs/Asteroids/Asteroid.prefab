@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3772816491604647548}
   - component: {fileID: 7122310104358375957}
-  - component: {fileID: -6156272937499028177}
+  - component: {fileID: 6877540539002528541}
   m_Layer: 0
   m_Name: Asteroid
   m_TagString: Untagged
@@ -133,7 +133,7 @@ Transform:
   m_GameObject: {fileID: 3581036847306000334}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.3327682, y: 13.428997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -168,7 +168,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-6156272937499028177
+--- !u!114 &6877540539002528541
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,7 +182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nickName: 
   _isDestructable: 1
-  _hitPoints: 2
+  _hitPoints: 5
   _eventOnDeath:
     m_PersistentCalls:
       m_Calls: []

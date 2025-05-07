@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 7413637158457143166}
   - component: {fileID: 150366803352672840}
   - component: {fileID: 7635054629790136676}
+  - component: {fileID: 8731757602052656808}
   m_Layer: 0
   m_Name: EnemyShipNode
   m_TagString: Untagged
@@ -202,6 +203,18 @@ MonoBehaviour:
       m_Calls: []
   _shipSpriteRenderer: {fileID: 860551911484518702}
   _shipExplosionNode: {fileID: 5183095709847474116}
+--- !u!114 &8731757602052656808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7419508362045381367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3abc9a74a4b3c42438c8d4ab73552c0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8817016505801362005
 GameObject:
   m_ObjectHideFlags: 0
