@@ -69,6 +69,7 @@ namespace Space_lancer
             Action_ControlShip();
             Action_FindNewAttackTarget();
             Action_Fire();
+            ActionEvadeCollision();
         }
 
         private void Action_Fire()
@@ -134,6 +135,14 @@ namespace Space_lancer
         }
 
         #region Timers
+
+        private void ActionEvadeCollision()
+        {
+            if (Physics2D.Raycast(transform.position, transform.up, _evadeRayLength))
+            {
+                _movePosition = transform.position + transform.right * 100.0f;
+            }
+        }
 
         void InitTimers()
         {
