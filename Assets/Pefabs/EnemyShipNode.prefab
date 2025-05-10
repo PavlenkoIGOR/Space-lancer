@@ -116,9 +116,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4056100109561385085}
   - component: {fileID: 7413637158457143166}
-  - component: {fileID: 150366803352672840}
-  - component: {fileID: 7635054629790136676}
   - component: {fileID: 8731757602052656808}
+  - component: {fileID: 4235400384689700659}
   m_Layer: 0
   m_Name: EnemyShipNode
   m_TagString: Untagged
@@ -169,40 +168,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &150366803352672840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7419508362045381367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cabbcb722f3b60d4eb796dd0e115e7f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _velocityDamageModifier: 2
-  _damageConst: 100
---- !u!114 &7635054629790136676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7419508362045381367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7227c921bdaa13409b39408eba7b57a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _nickName: 
-  _isDestructable: 1
-  _hitPoints: 100
-  _eventOnDeath:
-    m_PersistentCalls:
-      m_Calls: []
-  _shipSpriteRenderer: {fileID: 860551911484518702}
-  _shipExplosionNode: {fileID: 5183095709847474116}
 --- !u!114 &8731757602052656808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,6 +180,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3abc9a74a4b3c42438c8d4ab73552c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _behaviour: 1
+  _navigationLinear: 0.106
+  _navigationAngular: 0.144
+  _randSelectMovePointTime: 0
+  _findNewTargetTime: 0
+  _shootDelay: 0
+  _evadeRayLength: 0
+--- !u!114 &4235400384689700659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7419508362045381367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 609a68a10cb1e8d4e9e4668c0645e2e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nickName: 
+  _isDestructable: 1
+  _hitPoints: 50
+  _eventOnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  _shipSpriteRenderer: {fileID: 860551911484518702}
+  _shipExplosionNode: {fileID: 5183095709847474116}
+  _mass: 0
+  _thrust: 1000
+  _mobility: 2000
+  _maxLinearVelocity: 5
+  m_maxAngularVelocity: 360
+  _turrets: []
+  _maxEnergy: 0
+  _maxAmmo: 0
+  _energyRegenPerSec: 0
 --- !u!1 &8817016505801362005
 GameObject:
   m_ObjectHideFlags: 0
