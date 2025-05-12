@@ -35,6 +35,8 @@ namespace Space_lancer
         private Destructable _selectedTarget;
 
         private TimerSL _randomizeDirectionTimerSL;
+        private TimerSL _fireTimerSL;
+        private TimerSL _findNewTargetTimerSL;
 
         void Start()
         {
@@ -74,11 +76,55 @@ namespace Space_lancer
 
         private void Action_Fire()
         {
+            if (_selectedTarget != null)
+            {
+                if (_fireTimerSL.isFinished)
+                {
+                    _ship.ShipFire(TurretMode.Primary);
 
+                    _fireTimerSL.Start(_shootDelay);
+                }
+            }
         }
 
         private void Action_FindNewAttackTarget()
         {
+            if (_findNewTargetTimerSL.isFinished)
+            {
+                _selectedTarget = FindNearestDestructableTarget();
+
+                _findNewTargetTimerSL.Start(_shootDelay);
+            }
+        }
+
+        private Destructable FindNearestDestructableTarget()
+        {
+            float maxDist = float.MaxValue;
+
+            Destructable potentialTarget = null;
+            foreach (var item in Destructable.allDestructables)
+            {
+                if (item.GetComponent<SpaceShip>() == _ship) { continue; }
+                if (item.teamId == Destructable.teamIdNeutral)
+                {
+                    continue;
+                }
+                if (item.teamId == _ship.teamId)
+                {
+                    continue;
+                }
+
+                float dist = Vector2.Distance(_ship.transform.position, item.transform.position);
+
+                if (dist < maxDist)
+                {
+                    maxDist = dist;
+                    potentialTarget = item;
+                }
+            }
+
+
+            return potentialTarget;
         }
 
         private void Action_ControlShip()
@@ -147,11 +193,18 @@ namespace Space_lancer
         void InitTimers()
         {
             _randomizeDirectionTimerSL = new TimerSL(_randSelectMovePointTime);
+
+            _fireTimerSL = new TimerSL(_shootDelay);
+
+            _findNewTargetTimerSL = new TimerSL(_findNewTargetTime);
         }
 
         void UpdateTimers()
         {
             _randomizeDirectionTimerSL.RemoveTime(Time.deltaTime);
+
+            _fireTimerSL.RemoveTime(Time.deltaTime);
+            _findNewTargetTimerSL.RemoveTime(Time.deltaTime);
         }
 
 

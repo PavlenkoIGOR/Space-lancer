@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -85,9 +86,31 @@ namespace Space_lancer
             _eventOnDeath?.Invoke();
         }
         #endregion
+
+
+        static HashSet<Destructable> _allDestructables;
+        public static IReadOnlyCollection<Destructable> allDestructables => _allDestructables;
+
+        protected virtual void OnEnable()
+        {
+            if (_allDestructables == null)
+            {
+                _allDestructables = new HashSet<Destructable>();
+            }
+            _allDestructables.Add(this);
+        }
+
         protected virtual void OnDestroy()
         {
+            _allDestructables?.Remove(this);
             _eventOnDeath.RemoveAllListeners();
         }
+
+        public const int teamIdNeutral = 0;
+
+        [SerializeField] private int _teamId;
+        public int teamId => _teamId;
+
+
     }
 }
