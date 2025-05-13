@@ -1,12 +1,25 @@
 using System;
 using UnityEngine;
 using UnityEngine.UIElements;
+using static Space_lancer.AI_Controller;
 
 namespace Space_lancer
 {
     [RequireComponent(typeof(SpaceShip))]
     public class AI_Controller : MonoBehaviour
     {
+        #region для выбора траектории
+        private enum MovementShape
+        {
+            Simple,
+            Circle,
+            Square
+        }
+        [SerializeField] private MovementShape _movementShape;
+
+        [SerializeField] private float _shapeSize = 10f; // радиус или сторона квадрата
+        #endregion
+
         public enum AIBehaviour
         {
             Null,
@@ -115,6 +128,7 @@ namespace Space_lancer
                 }
 
                 float dist = Vector2.Distance(_ship.transform.position, item.transform.position);
+                
 
                 if (dist < maxDist)
                 {
@@ -152,26 +166,66 @@ namespace Space_lancer
             {
                 if (_selectedTarget != null)
                 {
-                    _movePosition = _selectedTarget.transform.position;
+                    //_movePosition = _selectedTarget.transform.position;
+
+                    Vector3 targetPos = _selectedTarget.transform.position;
+
+                    // Получаем Rigidbody2D цели
+                    Rigidbody2D targetRb = _selectedTarget.GetComponent<Rigidbody2D>();
+                    Vector3 targetVelocity = Vector3.zero;
+                    if (targetRb != null)
+                    {
+                        targetVelocity = targetRb.velocity; // Vector2 -> Vector3
+                    }
+
+                    float distance = Vector3.Distance(transform.position, targetPos);
+                   
+
+                    float timeToReach = distance / (targetVelocity.z + 2.0f);
+
+                    Vector3 predictedPos = targetPos + (Vector3)targetVelocity * timeToReach;
+
+                    _movePosition = predictedPos;
                 }
                 else
                 {
                     if (_patrolPoint != null)
                     {
-                        bool isInsidePatrolZone = (_patrolPoint.transform.position - transform.position).sqrMagnitude < _patrolPoint.radius * _patrolPoint.radius;
-
-                        if (isInsidePatrolZone)
+                        Vector3 newPoint;
+                        if (_movementShape == MovementShape.Simple)
                         {
-                            if (_randomizeDirectionTimerSL.isFinished)
+                            bool isInsidePatrolZone = (_patrolPoint.transform.position - transform.position).sqrMagnitude < _patrolPoint.radius * _patrolPoint.radius;
+
+                            if (isInsidePatrolZone)
                             {
-                                Vector2 newPoint = UnityEngine.Random.onUnitSphere * _patrolPoint.radius + _patrolPoint.transform.position;
+                                if (_randomizeDirectionTimerSL.isFinished)
+                                {
+                                    newPoint = UnityEngine.Random.onUnitSphere * _patrolPoint.radius + _patrolPoint.transform.position;
 
-                                _movePosition = newPoint;
+                                    _movePosition = newPoint;
 
-                                _randomizeDirectionTimerSL.Start(_randSelectMovePointTime);
+                                    _randomizeDirectionTimerSL.Start(_randSelectMovePointTime);
+                                }
+                            }
+                            else
+                            {
+                                _movePosition = _patrolPoint.transform.position;
                             }
                         }
-                        else
+                        else if (_movementShape == MovementShape.Square)
+                        {
+                            float halfSide = _shapeSize / 2f;
+                            float randX = UnityEngine.Random.Range(-halfSide, halfSide);
+                            float randY = UnityEngine.Random.Range(-halfSide, halfSide);
+                            newPoint = _patrolPoint.transform.position + new Vector3(randX, randY, 0);
+                            _movePosition = newPoint;
+                        }
+                        else if (_movementShape == MovementShape.Circle)
+                        {
+                            Vector2 randDirCircle = UnityEngine.Random.insideUnitCircle * _shapeSize;
+                            newPoint = _patrolPoint.transform.position + new Vector3(randDirCircle.x, randDirCircle.y, 0);
+                        }
+                        else 
                         {
                             _movePosition = _patrolPoint.transform.position;
                         }

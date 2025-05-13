@@ -264,6 +264,7 @@ GameObject:
   - component: {fileID: 168368467930171842}
   - component: {fileID: 4555241413308553578}
   - component: {fileID: 3042246616362235147}
+  - component: {fileID: 4129387233949474416}
   m_Layer: 0
   m_Name: PlayerShipNode
   m_TagString: Untagged
@@ -338,6 +339,7 @@ MonoBehaviour:
       m_Calls: []
   _shipSpriteRenderer: {fileID: 5087646944188856412}
   _shipExplosionNode: {fileID: 3087434068211957284}
+  _teamId: 2
   _mass: 1
   _thrust: 1000
   _mobility: 2000
@@ -376,6 +378,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33dfb3a76d0629643bf436db281bd91b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4129387233949474416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3990519791660744321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3abc9a74a4b3c42438c8d4ab73552c0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _movementShape: 0
+  _shapeSize: 10
+  _behaviour: 0
+  _patrolPoint: {fileID: 0}
+  _navigationLinear: 0.379
+  _navigationAngular: 0.295
+  _randSelectMovePointTime: 3
+  _findNewTargetTime: 1
+  _shootDelay: 0
+  _evadeRayLength: 3.56
 --- !u!1 &4360897208437049380
 GameObject:
   m_ObjectHideFlags: 0

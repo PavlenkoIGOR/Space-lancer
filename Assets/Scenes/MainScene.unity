@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyShipNode
       objectReference: {fileID: 0}
+    - target: {fileID: 7419508362045381367, guid: 162140c133e86494f88f161c7c4aaaa9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8731757602052656808, guid: 162140c133e86494f88f161c7c4aaaa9, type: 3}
       propertyPath: _behaviour
       value: 0
@@ -409,7 +413,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &419808989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,7 +421,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419808988}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c61e44334b75e3b4f94832e54c2488dd, type: 3}
   m_Name: 
@@ -1156,6 +1160,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3abc9a74a4b3c42438c8d4ab73552c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _movementShape: 0
+  _shapeSize: 10
   _behaviour: 1
   _patrolPoint: {fileID: 681889186}
   _navigationLinear: 0.379
@@ -1530,6 +1536,14 @@ PrefabInstance:
     - target: {fileID: 3990519791660744321, guid: 009792761e7a7fe46871a19c5804179d, type: 3}
       propertyPath: m_Name
       value: PlayerShipNode (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129387233949474416, guid: 009792761e7a7fe46871a19c5804179d, type: 3}
+      propertyPath: _behaviour
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129387233949474416, guid: 009792761e7a7fe46871a19c5804179d, type: 3}
+      propertyPath: _movementShape
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9010898054386341645, guid: 009792761e7a7fe46871a19c5804179d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2095,9 +2109,29 @@ PrefabInstance:
       propertyPath: _teamId
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 168368467930171842, guid: 009792761e7a7fe46871a19c5804179d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042246616362235147, guid: 009792761e7a7fe46871a19c5804179d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3990519791660744321, guid: 009792761e7a7fe46871a19c5804179d, type: 3}
       propertyPath: m_Name
       value: PlayerShipNode
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990519791660744321, guid: 009792761e7a7fe46871a19c5804179d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129387233949474416, guid: 009792761e7a7fe46871a19c5804179d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555241413308553578, guid: 009792761e7a7fe46871a19c5804179d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9010898054386341645, guid: 009792761e7a7fe46871a19c5804179d, type: 3}
       propertyPath: m_LocalPosition.x
