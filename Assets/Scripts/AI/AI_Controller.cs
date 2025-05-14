@@ -1,7 +1,10 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.U2D;
 using UnityEngine.UIElements;
 using static Space_lancer.AI_Controller;
+using static UnityEngine.GraphicsBuffer;
 
 namespace Space_lancer
 {
@@ -128,7 +131,7 @@ namespace Space_lancer
                 }
 
                 float dist = Vector2.Distance(_ship.transform.position, item.transform.position);
-                
+
 
                 if (dist < maxDist)
                 {
@@ -160,6 +163,10 @@ namespace Space_lancer
             return -angle;
         }
 
+        private bool isHasCenter = false;
+        private Vector3 _centerOfPatrolShape;
+        private float _currentAngle = 0f; // добавьте в класс
+        private float orbitSpeed = 0.1f; // скорость вращения (рад/с), настройте по необходимости
         private void Action_FindNewPosition()
         {
             if (_behaviour == AIBehaviour.Patrol)
@@ -179,7 +186,7 @@ namespace Space_lancer
                     }
 
                     float distance = Vector3.Distance(transform.position, targetPos);
-                   
+
 
                     float timeToReach = distance / (targetVelocity.z + 2.0f);
 
@@ -212,7 +219,7 @@ namespace Space_lancer
                                 _movePosition = _patrolPoint.transform.position;
                             }
                         }
-                        else if (_movementShape == MovementShape.Square)
+                        if (_movementShape == MovementShape.Square)
                         {
                             float halfSide = _shapeSize / 2f;
                             float randX = UnityEngine.Random.Range(-halfSide, halfSide);
@@ -220,18 +227,46 @@ namespace Space_lancer
                             newPoint = _patrolPoint.transform.position + new Vector3(randX, randY, 0);
                             _movePosition = newPoint;
                         }
-                        else if (_movementShape == MovementShape.Circle)
+                        if (_movementShape == MovementShape.Circle)
                         {
-                            Vector2 randDirCircle = UnityEngine.Random.insideUnitCircle * _shapeSize;
-                            newPoint = _patrolPoint.transform.position + new Vector3(randDirCircle.x, randDirCircle.y, 0);
+                            if (isHasCenter == true)
+                            {
+                                // Обновляем угол для движения по часовой
+                                _currentAngle -= orbitSpeed * Time.deltaTime;
+
+                                // Вычисляем новую позицию по окружности
+                                float x = _centerOfPatrolShape.x + Mathf.Cos(_currentAngle) * _shapeSize;
+                                float y = _centerOfPatrolShape.y + Mathf.Sin(_currentAngle) * _shapeSize;
+
+                                transform.position = new Vector3(x, y, transform.position.z);
+
+                                // Поворот объекта так, чтобы +X указывал на центр
+                                Vector3 directionToCenter = _centerOfPatrolShape - transform.position;
+                                float angle = Mathf.Atan2(directionToCenter.y, directionToCenter.x) * Mathf.Rad2Deg;
+                                transform.rotation = Quaternion.Euler(0, 0, angle);
+                            }
+                            else
+                            {
+                                isHasCenter = true;
+                                // Изначально устанавливаем центр так, чтобы объект был на расстоянии _shapeSize
+                                _centerOfPatrolShape = transform.position + transform.right * _shapeSize;
+
+
+                                // Инициализируем угол так, чтобы объект был на окружности
+                                Vector3 dirFromCenter = transform.position - _centerOfPatrolShape;
+                                _currentAngle = Mathf.Atan2(dirFromCenter.y, dirFromCenter.x);
+                            }
                         }
-                        else 
-                        {
-                            _movePosition = _patrolPoint.transform.position;
-                        }
+
+                        Debug.Log($"_patrolPoint {_patrolPoint}");
+                    }
+                    else
+                    {
+                        Debug.Log("_patrolPoint null");
                     }
                 }
             }
+            
         }
 
         #region Timers
