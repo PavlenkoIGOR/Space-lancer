@@ -60,6 +60,19 @@ public class Projectile : Entity
             if (destructableObj != null && destructableObj != _parent) 
             {
                 destructableObj.ApplyDmg(_damage);
+
+                if (_parent == Player.instance.activeShip)
+                {
+                    Player.instance.AddScore(destructableObj.scoreValue);
+
+                    if (destructableObj is SpaceShip)
+                    {
+                        if (destructableObj._hitPoints <= 0)
+                        {
+                            Player.instance.AddKill();
+                        }
+                    }
+                }
             }
             OnProjectileLifeEnd(hit.collider, hit.point);
         }

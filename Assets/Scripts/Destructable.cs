@@ -111,6 +111,7 @@ namespace Space_lancer
         [SerializeField] private int _teamId;
         public int teamId => _teamId;
 
-
+        [SerializeField] private int _scoreValue;
+        public int scoreValue => _scoreValue;
     }
 }
