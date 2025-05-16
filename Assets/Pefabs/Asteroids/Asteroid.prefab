@@ -188,6 +188,8 @@ MonoBehaviour:
       m_Calls: []
   _shipSpriteRenderer: {fileID: 1713107228525661210}
   _shipExplosionNode: {fileID: 1814266532045589800}
+  _teamId: 0
+  _scoreValue: 5
 --- !u!1 &5030862179012648229
 GameObject:
   m_ObjectHideFlags: 0
