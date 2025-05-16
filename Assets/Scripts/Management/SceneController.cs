@@ -26,6 +26,11 @@ namespace Space_lancer
             Screen.orientation = ScreenOrientation.Portrait;
             SceneManager.LoadSceneAsync(nameof(Scenes.UniqueLevel));
         }
+
+        public void LoadMainMenu()
+        {
+            SceneManager.LoadSceneAsync(nameof(Scenes.MainMenu));
+        }
         //public void LoadSinglePlayerScene()
         //{
         //    foreach (var scene in scenes)

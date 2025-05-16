@@ -28,7 +28,7 @@ public class Projectile : Entity
     // Update is called once per frame
     void Update()
     {
-        
+
         float stepLength = _velocity * Time.deltaTime;
         Vector2 step = Vector2.zero;
         if (_type == ProjectileType.SeekingMissle)
@@ -51,19 +51,31 @@ public class Projectile : Entity
         }
 
 
-       
+
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.up, stepLength);
         if (hit)
         {
             Destructable destructableObj = hit.collider.transform.root.GetComponent<Destructable>();
-            if (destructableObj != null && destructableObj != _parent) 
+            if (destructableObj != null && destructableObj != _parent)
             {
                 destructableObj.ApplyDmg(_damage);
+
+                if (destructableObj.currentHitPoints <= 0)
+                {
+                    if (_parent == Player.instance.activeShip)
+                    {
+                        Player.instance.AddScore(destructableObj.scoreValue);
+                        if (destructableObj is SpaceShip)
+                        {
+                            Player.instance.AddKill();
+                        }
+                    }
+                }
             }
             OnProjectileLifeEnd(hit.collider, hit.point);
         }
-        
+
         _timer += Time.deltaTime;
         if (_timer > _lifeTime)
         {

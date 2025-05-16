@@ -12,6 +12,13 @@ namespace Space_lancer
         [SerializeField] private MovementController _movementController;
 
         public SpaceShip activeShip => _ship;
+
+        private int _score;
+        private int _numKills;
+
+        public int score => _score;
+        public int numKills => _numKills;
+        public int numLives => _livesQuantity;
         // Start is called before the first frame update
         void Start()
         {
@@ -45,6 +52,16 @@ namespace Space_lancer
             _cameraController.SetTarget(_ship.transform);
             _movementController.SetTargetShip(_ship);
             _ship.eventOnDeath.AddListener(OnShipDeath);
+        }
+
+        public void AddScore(int num)
+        {
+            _score += num;
+        }
+
+        public void AddKill()
+        {
+            _numKills++;
         }
     }
 }

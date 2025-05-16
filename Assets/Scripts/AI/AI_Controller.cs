@@ -258,11 +258,11 @@ namespace Space_lancer
                             }
                         }
 
-                        Debug.Log($"_patrolPoint {_patrolPoint}");
+                        //Debug.Log($"_patrolPoint {_patrolPoint}");
                     }
                     else
                     {
-                        Debug.Log("_patrolPoint null");
+                        //Debug.Log("_patrolPoint null");
                     }
                 }
             }

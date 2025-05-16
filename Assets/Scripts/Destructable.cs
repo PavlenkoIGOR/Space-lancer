@@ -18,6 +18,7 @@ namespace Space_lancer
         /// hitpoints on start
         /// </summary>
         [SerializeField] public int _hitPoints;
+        public int maxHitPoints => _hitPoints;
 
         /// <summary>
         /// current hitpoints
@@ -111,6 +112,8 @@ namespace Space_lancer
         [SerializeField] private int _teamId;
         public int teamId => _teamId;
 
+        [SerializeField] private int _scoreValue;
 
+        public int scoreValue => _scoreValue;
     }
 }

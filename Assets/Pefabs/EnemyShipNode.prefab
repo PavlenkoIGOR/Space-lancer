@@ -180,13 +180,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3abc9a74a4b3c42438c8d4ab73552c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _movementShape: 0
+  _shapeSize: 10
   _behaviour: 1
-  _navigationLinear: 0.106
+  _patrolPoint: {fileID: 0}
+  _navigationLinear: 0.258
   _navigationAngular: 0.144
-  _randSelectMovePointTime: 0
-  _findNewTargetTime: 0
+  _randSelectMovePointTime: 3
+  _findNewTargetTime: 1
   _shootDelay: 0
-  _evadeRayLength: 0
+  _evadeRayLength: 0.36
 --- !u!114 &4235400384689700659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,15 +210,16 @@ MonoBehaviour:
       m_Calls: []
   _shipSpriteRenderer: {fileID: 860551911484518702}
   _shipExplosionNode: {fileID: 5183095709847474116}
-  _mass: 0
+  _teamId: 1
+  _mass: 1
   _thrust: 1000
   _mobility: 2000
   _maxLinearVelocity: 5
   m_maxAngularVelocity: 360
   _turrets: []
-  _maxEnergy: 0
-  _maxAmmo: 0
-  _energyRegenPerSec: 0
+  _maxEnergy: 20
+  _maxAmmo: 10
+  _energyRegenPerSec: 1
 --- !u!1 &8817016505801362005
 GameObject:
   m_ObjectHideFlags: 0
