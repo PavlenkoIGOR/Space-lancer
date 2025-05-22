@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6275de3b7a4bb4e97e71e991c929ed, type: 3}
+  m_Name: lvl_01
+  m_EditorClassIdentifier: 
+  _title: First flight
+  _sceneName: lvl_01
+  _previewIMG: {fileID: 1021785496, guid: 2b16f77c054f5894c97d78177de2b6db, type: 3}
+  _nextLVL: {fileID: 11400000, guid: c898f41dac13e8544b95cb59459a5051, type: 2}
