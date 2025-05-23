@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Space_lancer
 {
@@ -28,7 +29,7 @@ namespace Space_lancer
         {
             _pausePanel.SetActive(false);
             Time.timeScale = 1.0f;
-            SceneController.instance.LoadMainMenu();
+            SceneManager.LoadScene(nameof(Scenes.MainMenu));
         }
     }
 }

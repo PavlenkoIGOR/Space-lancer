@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 585052681893184285}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.73, z: 0}
+  m_LocalPosition: {x: 0, y: -0.88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 3042246616362235147}
   - component: {fileID: 4129387233949474416}
   m_Layer: 0
-  m_Name: PlayerShipNode
+  m_Name: PlayerShipNode 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -288,7 +288,9 @@ Transform:
   - {fileID: 4403319140347765205}
   - {fileID: 1071804970657566756}
   - {fileID: 4707651513447431195}
+  - {fileID: 6417764971172514753}
   - {fileID: 3434863853502528407}
+  - {fileID: 2721889831763690318}
   - {fileID: 7368009469766529722}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -333,7 +335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nickName: PlayerShip
   _isDestructable: 1
-  _hitPoints: 10
+  _hitPoints: 30
   _eventOnDeath:
     m_PersistentCalls:
       m_Calls: []
@@ -341,7 +343,7 @@ MonoBehaviour:
   _shipExplosionNode: {fileID: 3087434068211957284}
   _teamId: 2
   _scoreValue: 0
-  _previewImage: {fileID: 1021785496, guid: 2b16f77c054f5894c97d78177de2b6db, type: 3}
+  _previewImage: {fileID: 802895543, guid: 2b16f77c054f5894c97d78177de2b6db, type: 3}
   _mass: 1
   _thrust: 1000
   _mobility: 2000
@@ -351,8 +353,8 @@ MonoBehaviour:
   - {fileID: 7039678675865365360}
   - {fileID: 6790959870365469498}
   - {fileID: 8049742058345169718}
-  _maxEnergy: 20
-  _maxAmmo: 10
+  _maxEnergy: 50
+  _maxAmmo: 30
   _energyRegenPerSec: 1
 --- !u!114 &4555241413308553578
 MonoBehaviour:
@@ -428,7 +430,7 @@ Transform:
   m_GameObject: {fileID: 4360897208437049380}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.65, y: -0.6, z: 0}
+  m_LocalPosition: {x: 1.28, y: 0.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -573,7 +575,7 @@ Transform:
   m_GameObject: {fileID: 4934680633639159325}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.65, y: 0, z: 0}
+  m_LocalPosition: {x: -0.79, y: 0.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -619,7 +621,7 @@ Transform:
   m_GameObject: {fileID: 5902549746836787834}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.65, y: 0, z: 0}
+  m_LocalPosition: {x: 0.79, y: 0.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -665,7 +667,7 @@ Transform:
   m_GameObject: {fileID: 5944427426177254564}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.83, z: 0}
+  m_LocalPosition: {x: 0, y: 1.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -685,6 +687,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _turretMode: 1
   _turretProperties: {fileID: 11400000, guid: 42e633419b42b2e4ea7e7e57a52f3566, type: 2}
+--- !u!1 &6856540209696746714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6417764971172514753}
+  - component: {fileID: 7745021789708183297}
+  m_Layer: 0
+  m_Name: PrimaryTurret_1 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6417764971172514753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6856540209696746714}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.99, y: 0.38, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9010898054386341645}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7745021789708183297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6856540209696746714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c75cba97de110e43b351b278adcc01b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _turretMode: 0
+  _turretProperties: {fileID: 11400000, guid: 07154a87adc162d4b8175651dae7dea0, type: 2}
 --- !u!1 &6920754762870113644
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,7 +759,7 @@ Transform:
   m_GameObject: {fileID: 6920754762870113644}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.64, y: -0.6, z: 0}
+  m_LocalPosition: {x: -1.28, y: 0.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -907,12 +955,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1021785496, guid: 2b16f77c054f5894c97d78177de2b6db, type: 3}
+  m_Sprite: {fileID: 802895543, guid: 2b16f77c054f5894c97d78177de2b6db, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 1.44, y: 1.8}
+  m_Size: {x: 2.66, y: 2.22}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -950,6 +998,52 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.09}
-  m_Size: {x: 0.99, y: 1.42}
+  m_Offset: {x: 0, y: 0.04}
+  m_Size: {x: 2.11, y: 1.54}
   m_Direction: 0
+--- !u!1 &7950011113175398618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2721889831763690318}
+  - component: {fileID: 3636801623828496819}
+  m_Layer: 0
+  m_Name: PrimaryTurret_2 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2721889831763690318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7950011113175398618}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.99, y: 0.38, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9010898054386341645}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3636801623828496819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7950011113175398618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c75cba97de110e43b351b278adcc01b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _turretMode: 0
+  _turretProperties: {fileID: 11400000, guid: 07154a87adc162d4b8175651dae7dea0, type: 2}

@@ -11,6 +11,7 @@ namespace Space_lancer
     public class SpaceShip : Destructable
     {
         [Header("SpaceShip")]
+        [SerializeField] private Sprite _previewImage;
         [SerializeField] private float _mass;
 
         /// <summary>
@@ -32,6 +33,11 @@ namespace Space_lancer
         /// max rotation force (rad/sec)
         /// </summary>
         [SerializeField] private float m_maxAngularVelocity;
+
+        public float maxLinearVelocity => _maxLinearVelocity;
+        public float maxAngularVelocity => m_maxAngularVelocity;
+        
+        public Sprite previewImage => _previewImage;
 
         private Rigidbody2D _rb;
 
@@ -120,6 +126,7 @@ namespace Space_lancer
 
         private float _primaryEnergy;
         private int _secondaryAmmo;
+        
 
         public void AddEnergy(int nrg)
         {

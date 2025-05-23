@@ -288,9 +288,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 370108682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 960.00006, y: -76.66666}
   m_SizeDelta: {x: 1709.6178, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &23237580
@@ -694,9 +694,9 @@ RectTransform:
   - {fileID: 629881759}
   m_Father: {fileID: 370108682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 960.00006, y: -560}
   m_SizeDelta: {x: 1709.6178, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &75181105
@@ -929,9 +929,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 155248318}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 284.9363, y: -612.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &148592106
@@ -1043,6 +1043,7 @@ GameObject:
   - component: {fileID: 155248321}
   - component: {fileID: 155248320}
   - component: {fileID: 155248319}
+  - component: {fileID: 155248322}
   m_Layer: 5
   m_Name: LevelSelectionBttns (1)
   m_TagString: Untagged
@@ -1068,10 +1069,10 @@ RectTransform:
   - {fileID: 1562965576}
   m_Father: {fileID: 75181104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 569.8726, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 854.80896, y: -400}
+  m_SizeDelta: {x: 569.8726, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &155248319
 MonoBehaviour:
@@ -1137,6 +1138,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155248317}
   m_CullTransparentMesh: 1
+--- !u!114 &155248322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155248317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbca541baaf68d946938c887aea5ad62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelProps: {fileID: 11400000, guid: c898f41dac13e8544b95cb59459a5051, type: 2}
+  _levelTitle: {fileID: 331395150}
+  _previewImage: {fileID: 1953548456}
 --- !u!1 &186372755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1575,7 +1591,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 959.8089, y: -1023.51245}
+  m_AnchoredPosition: {x: 960.00006, y: -1023.3333}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &290434462
@@ -1692,9 +1708,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 155248318}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 284.9363, y: -52.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &331395150
@@ -1946,7 +1962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &370108682
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2065,9 +2081,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 675171443}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 284.9363, y: -332.5}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &381844443
@@ -2656,6 +2672,7 @@ GameObject:
   - component: {fileID: 629881762}
   - component: {fileID: 629881761}
   - component: {fileID: 629881760}
+  - component: {fileID: 629881763}
   m_Layer: 5
   m_Name: LevelSelectionBttns (2)
   m_TagString: Untagged
@@ -2681,10 +2698,10 @@ RectTransform:
   - {fileID: 1693760790}
   m_Father: {fileID: 75181104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 569.8726, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1424.6815, y: -400}
+  m_SizeDelta: {x: 569.8726, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &629881760
 MonoBehaviour:
@@ -2750,6 +2767,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629881758}
   m_CullTransparentMesh: 1
+--- !u!114 &629881763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629881758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbca541baaf68d946938c887aea5ad62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelProps: {fileID: 0}
+  _levelTitle: {fileID: 1691758086}
+  _previewImage: {fileID: 831319534}
 --- !u!1 &662630054
 GameObject:
   m_ObjectHideFlags: 0
@@ -2762,6 +2794,7 @@ GameObject:
   - component: {fileID: 662630058}
   - component: {fileID: 662630057}
   - component: {fileID: 662630056}
+  - component: {fileID: 662630059}
   m_Layer: 5
   m_Name: ShipSelectionBttns (2)
   m_TagString: Untagged
@@ -2791,7 +2824,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1424.6814, y: -400}
+  m_AnchoredPosition: {x: 1424.6815, y: -400}
   m_SizeDelta: {x: 569.8726, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &662630056
@@ -2858,6 +2891,25 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &662630059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662630054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cffd72905f4707b4dad3c99a2dba717c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mainMenuPanel: {fileID: 1475335787}
+  _prefabSpaceShip: {fileID: 168368467930171842, guid: cbc5e8d5062feb24b8a6af555124444a, type: 3}
+  _shipName: {fileID: 825957160}
+  _hitPoints: {fileID: 1040239131}
+  _speed: {fileID: 236128281}
+  _agility: {fileID: 1650227855}
+  _preview: {fileID: 817010609}
 --- !u!1 &675171442
 GameObject:
   m_ObjectHideFlags: 0
@@ -2870,6 +2922,7 @@ GameObject:
   - component: {fileID: 675171446}
   - component: {fileID: 675171445}
   - component: {fileID: 675171444}
+  - component: {fileID: 675171447}
   m_Layer: 5
   m_Name: LevelSelectionBttns
   m_TagString: Untagged
@@ -2895,10 +2948,10 @@ RectTransform:
   - {fileID: 1198824398}
   m_Father: {fileID: 75181104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 569.8726, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 284.93634, y: -400}
+  m_SizeDelta: {x: 569.8726, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &675171444
 MonoBehaviour:
@@ -2964,6 +3017,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 675171442}
   m_CullTransparentMesh: 1
+--- !u!114 &675171447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675171442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbca541baaf68d946938c887aea5ad62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelProps: {fileID: 11400000, guid: d5db5ab6dcdfa24449b0ffd79c87f5bd, type: 2}
+  _levelTitle: {fileID: 2025711873}
+  _previewImage: {fileID: 381844443}
 --- !u!1 &680736387
 GameObject:
   m_ObjectHideFlags: 0
@@ -3132,9 +3200,9 @@ RectTransform:
   - {fileID: 120045427}
   m_Father: {fileID: 370108682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 960.00006, y: -1023.3333}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &789620483
@@ -3460,9 +3528,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 629881759}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 284.9363, y: -332.5}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &831319534
@@ -3653,7 +3721,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 993876979}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1499246059}
+        m_TargetAssemblyTypeName: Space_lancer.ShipSelectionBttn, Assembly-CSharp
+        m_MethodName: SelectShip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &993876979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3728,7 +3808,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 959.8089, y: -995.197}
+  m_AnchoredPosition: {x: 960.00006, y: -995}
   m_SizeDelta: {x: 800, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &998935272
@@ -3774,7 +3854,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 998935273}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1475335787}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &998935273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4029,7 +4121,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1066842894}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1499246059}
+        m_TargetAssemblyTypeName: Space_lancer.ShipSelectionBttn, Assembly-CSharp
+        m_MethodName: SelectShip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1066842894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4370,9 +4474,9 @@ RectTransform:
   - {fileID: 566263602}
   m_Father: {fileID: 675171443}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 284.9363, y: -732.5}
   m_SizeDelta: {x: 200, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1198824399
@@ -4418,7 +4522,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1198824400}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 675171447}
+        m_TargetAssemblyTypeName: Space_lancer.LevelSelectionBttn, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1198824400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5348,6 +5464,7 @@ GameObject:
   - component: {fileID: 1475335785}
   - component: {fileID: 1475335784}
   - component: {fileID: 1475335783}
+  - component: {fileID: 1475335787}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5440,6 +5557,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1475335787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475335782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9bc226022cf8c447b919daaefe8960c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelSelectionPanel: {fileID: 370108681}
+  _shipSelectionPanel: {fileID: 1815909589}
+  _mainPanel: {fileID: 2107203035}
 --- !u!1 &1499246054
 GameObject:
   m_ObjectHideFlags: 0
@@ -5452,6 +5584,7 @@ GameObject:
   - component: {fileID: 1499246058}
   - component: {fileID: 1499246057}
   - component: {fileID: 1499246056}
+  - component: {fileID: 1499246059}
   m_Layer: 5
   m_Name: ShipSelectionBttns
   m_TagString: Untagged
@@ -5481,7 +5614,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 284.93628, y: -400}
+  m_AnchoredPosition: {x: 284.93634, y: -400}
   m_SizeDelta: {x: 569.8726, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1499246056
@@ -5548,6 +5681,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499246054}
   m_CullTransparentMesh: 1
+--- !u!114 &1499246059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499246054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cffd72905f4707b4dad3c99a2dba717c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mainMenuPanel: {fileID: 1475335787}
+  _prefabSpaceShip: {fileID: 168368467930171842, guid: 009792761e7a7fe46871a19c5804179d, type: 3}
+  _shipName: {fileID: 2315093}
+  _hitPoints: {fileID: 1204594987}
+  _speed: {fileID: 1436647675}
+  _agility: {fileID: 1180786924}
+  _preview: {fileID: 1300761658}
 --- !u!1 &1562965575
 GameObject:
   m_ObjectHideFlags: 0
@@ -5582,9 +5734,9 @@ RectTransform:
   - {fileID: 194877782}
   m_Father: {fileID: 155248318}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 284.9363, y: -732.5}
   m_SizeDelta: {x: 200, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1562965577
@@ -5630,7 +5782,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1562965578}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 155248322}
+        m_TargetAssemblyTypeName: Space_lancer.LevelSelectionBttn, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1562965578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5927,9 +6091,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 629881759}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 284.9363, y: -52.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1691758086
@@ -6063,9 +6227,9 @@ RectTransform:
   - {fileID: 186372756}
   m_Father: {fileID: 629881759}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 284.9363, y: -732.5}
   m_SizeDelta: {x: 200, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1693760791
@@ -6111,7 +6275,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1693760792}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 629881763}
+        m_TargetAssemblyTypeName: Space_lancer.LevelSelectionBttn, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1693760792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6232,7 +6408,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1762453011}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1499246059}
+        m_TargetAssemblyTypeName: Space_lancer.ShipSelectionBttn, Assembly-CSharp
+        m_MethodName: SelectShip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1762453011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6412,7 +6600,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 959.8089, y: -315.05374}
+  m_AnchoredPosition: {x: 960.00006, y: -315}
   m_SizeDelta: {x: 800, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1929745388
@@ -6541,9 +6729,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 629881759}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 284.9363, y: -612.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1942728310
@@ -6675,9 +6863,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 155248318}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 284.9363, y: -332.5}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1953548456
@@ -6750,9 +6938,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 675171443}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 284.9363, y: -612.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1963666504
@@ -6888,7 +7076,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 959.8089, y: -485.08957}
+  m_AnchoredPosition: {x: 960.00006, y: -485}
   m_SizeDelta: {x: 800, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1979526354
@@ -6935,9 +7123,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2087134564}
-        m_TargetAssemblyTypeName: Space_lancer.SceneController, Assembly-CSharp
-        m_MethodName: LoadSinglePlayerScene
+      - m_Target: {fileID: 1475335787}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: ShowLevelSelectionPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7019,7 +7207,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 959.8089, y: -76.70249}
+  m_AnchoredPosition: {x: 960.00006, y: -76.66666}
   m_SizeDelta: {x: 1709.6178, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1981802640
@@ -7155,7 +7343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 959.8089, y: -655.12537}
+  m_AnchoredPosition: {x: 960.00006, y: -655}
   m_SizeDelta: {x: 800, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2003877449
@@ -7202,9 +7390,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2087134564}
-        m_TargetAssemblyTypeName: Space_lancer.SceneController, Assembly-CSharp
-        m_MethodName: LoadUniqueLevelScene
+      - m_Target: {fileID: 1475335787}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: ShowShipSelectionPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7264,6 +7452,7 @@ GameObject:
   - component: {fileID: 2005699576}
   - component: {fileID: 2005699575}
   - component: {fileID: 2005699574}
+  - component: {fileID: 2005699577}
   m_Layer: 5
   m_Name: ShipSelectionBttns (1)
   m_TagString: Untagged
@@ -7293,7 +7482,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 854.80884, y: -400}
+  m_AnchoredPosition: {x: 854.80896, y: -400}
   m_SizeDelta: {x: 569.8726, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2005699574
@@ -7360,6 +7549,25 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &2005699577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005699572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cffd72905f4707b4dad3c99a2dba717c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mainMenuPanel: {fileID: 1475335787}
+  _prefabSpaceShip: {fileID: 168368467930171842, guid: e55e37c1a56b6594a96f5898c65089f5, type: 3}
+  _shipName: {fileID: 534563411}
+  _hitPoints: {fileID: 680736389}
+  _speed: {fileID: 49105590}
+  _agility: {fileID: 1387693468}
+  _preview: {fileID: 2032147132}
 --- !u!1 &2025711871
 GameObject:
   m_ObjectHideFlags: 0
@@ -7392,9 +7600,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 675171443}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 284.9363, y: -52.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2025711873
@@ -7530,7 +7738,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 959.8089, y: -825.16125}
+  m_AnchoredPosition: {x: 960.00006, y: -825}
   m_SizeDelta: {x: 800, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2030289409
@@ -7728,7 +7936,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 959.8089, y: -560.1075}
+  m_AnchoredPosition: {x: 960.00006, y: -560}
   m_SizeDelta: {x: 1709.6178, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2080096775
@@ -7829,7 +8037,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 959.8089, y: -115.017914}
+  m_AnchoredPosition: {x: 960.00006, y: -115}
   m_SizeDelta: {x: 1700, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2083516795

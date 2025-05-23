@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: lvl_01
   m_EditorClassIdentifier: 
   _title: First flight
-  _sceneName: lvl_01
+  _sceneName: MainScene
   _previewIMG: {fileID: 1021785496, guid: 2b16f77c054f5894c97d78177de2b6db, type: 3}
   _nextLVL: {fileID: 11400000, guid: c898f41dac13e8544b95cb59459a5051, type: 2}
