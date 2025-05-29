@@ -48,13 +48,13 @@ namespace Space_lancer
 
         private void CheckLvlConditions()
         {
-            if (_isLevelCompleted) return;
+            if (_isLevelCompleted == true) return;
 
             int numCompleted = 0;
 
             for (int i = 0; i < _conditions.Length; i++)
             {
-                if (_conditions[i].isCompleted)
+                if (_conditions[i].isCompleted == true)
                 {
                     numCompleted++;
                 }

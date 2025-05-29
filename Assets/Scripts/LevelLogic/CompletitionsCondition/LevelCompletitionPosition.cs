@@ -1,6 +1,4 @@
 using Space_lancer;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
@@ -18,6 +16,7 @@ public class LevelCompletitionPosition : LevelCondition
             }
             if (Vector3.Distance(Player.instance.activeShip.transform.position, transform.position) <= _radiusLCP) 
             {
+                Debug.Log("asdasd");
                 return true;
             }
             return false;
