@@ -4,13 +4,30 @@ namespace Space_lancer
 {
     public class Player : SingletonBase<Player>
     {
+        public static SpaceShip selectedSpaceShip;
+
         [SerializeField] private int _livesQuantity;
-        [SerializeField] private SpaceShip _ship;
-        [SerializeField] private GameObject _playerShipPrefab;
+        private SpaceShip _ship;
+        [SerializeField] private SpaceShip _playerShipPrefab;
 
         [SerializeField] private CameraController _cameraController;    
         [SerializeField] private MovementController _movementController;
 
+
+        public SpaceShip shipPrefab
+        {
+            get
+            {
+                if (selectedSpaceShip == null)
+                {
+                    return _playerShipPrefab;
+                }
+                else
+                {
+                    return selectedSpaceShip;
+                }
+            }
+        }
         public SpaceShip activeShip => _ship;
 
         private int _score;
@@ -22,8 +39,7 @@ namespace Space_lancer
         // Start is called before the first frame update
         void Start()
         {
-            _ship.eventOnDeath.AddListener(OnShipDeath);
-            
+            Respawn();
         }
 
         // Update is called once per frame
@@ -45,7 +61,7 @@ namespace Space_lancer
 
         private void Respawn()
         {
-            var newPlayerShip = Instantiate(_playerShipPrefab);
+            var newPlayerShip = Instantiate(shipPrefab);
 
             _ship = newPlayerShip.GetComponent<SpaceShip>();
 

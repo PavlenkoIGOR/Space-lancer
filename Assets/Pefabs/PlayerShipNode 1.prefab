@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 3042246616362235147}
   - component: {fileID: 4129387233949474416}
   m_Layer: 0
-  m_Name: PlayerShipNode
+  m_Name: PlayerShipNode 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nickName: PlayerShip
   _isDestructable: 1
-  _hitPoints: 10
+  _hitPoints: 20
   _eventOnDeath:
     m_PersistentCalls:
       m_Calls: []
@@ -341,7 +341,7 @@ MonoBehaviour:
   _shipExplosionNode: {fileID: 3087434068211957284}
   _teamId: 2
   _scoreValue: 0
-  _previewImage: {fileID: 1021785496, guid: 2b16f77c054f5894c97d78177de2b6db, type: 3}
+  _previewImage: {fileID: 159870931, guid: 2b16f77c054f5894c97d78177de2b6db, type: 3}
   _mass: 1
   _thrust: 1000
   _mobility: 2000
@@ -351,8 +351,8 @@ MonoBehaviour:
   - {fileID: 7039678675865365360}
   - {fileID: 6790959870365469498}
   - {fileID: 8049742058345169718}
-  _maxEnergy: 20
-  _maxAmmo: 10
+  _maxEnergy: 30
+  _maxAmmo: 20
   _energyRegenPerSec: 1
 --- !u!114 &4555241413308553578
 MonoBehaviour:
@@ -907,12 +907,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1021785496, guid: 2b16f77c054f5894c97d78177de2b6db, type: 3}
+  m_Sprite: {fileID: 159870931, guid: 2b16f77c054f5894c97d78177de2b6db, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 1.44, y: 1.8}
+  m_Size: {x: 1.84, y: 1.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -950,6 +950,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.09}
-  m_Size: {x: 0.99, y: 1.42}
+  m_Offset: {x: 0, y: -0.07}
+  m_Size: {x: 1.79, y: 1.93}
   m_Direction: 0
