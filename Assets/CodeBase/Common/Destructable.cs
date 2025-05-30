@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Space_lancer
+namespace Common
 {
     public class Destructable : Entity
     {

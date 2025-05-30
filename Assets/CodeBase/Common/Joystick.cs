@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 
-namespace Space_lancer
+namespace Common
 {
     public class Joystick : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUpHandler
     {

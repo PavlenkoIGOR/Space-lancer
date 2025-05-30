@@ -1,5 +1,6 @@
 using Space_lancer;
 using UnityEngine;
+using Common;
 
 public class SeekingArea : MonoBehaviour
 {

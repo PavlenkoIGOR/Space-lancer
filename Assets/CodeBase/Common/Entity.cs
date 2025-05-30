@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Space_lancer
+namespace Common
 {
     /// <summary>
     /// Base class of all interactive entities in project

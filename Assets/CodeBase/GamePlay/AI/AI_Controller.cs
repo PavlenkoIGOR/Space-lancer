@@ -1,10 +1,6 @@
 using System;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.U2D;
-using UnityEngine.UIElements;
-using static Space_lancer.AI_Controller;
-using static UnityEngine.GraphicsBuffer;
+using Common;
 
 namespace Space_lancer
 {

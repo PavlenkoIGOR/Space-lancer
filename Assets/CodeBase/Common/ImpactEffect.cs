@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Space_lancer
+namespace Common
 {
     public class ImpactEffect : MonoBehaviour
     {

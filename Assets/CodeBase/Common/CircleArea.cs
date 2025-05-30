@@ -6,7 +6,7 @@ using UnityEditor;
 #endif
 
 
-namespace Space_lancer
+namespace Common
 {
     public class CircleArea : MonoBehaviour
     {
